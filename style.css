@@ -874,3 +874,19 @@ del {
 color: #767676;
 }
 
+
+/** fixes **/
+
+#logo-inner h2 {
+	margin: 0 0 0 30px;
+}
+
+ul.children li a{
+	display: none;
+}
+
+input.checkbox, input.radio
+{
+	width: 20px;
+}
+
