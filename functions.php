@@ -1,11 +1,56 @@
-<?php //load_theme_textdomain('china-theme'); 
+<?php
+
+// Register Custom Navigation Walker
+require_once('wp_bootstrap_navwalker.php');
+
+function wpt_register_js() {
+    wp_register_script('jquery.bootstrap.min', get_template_directory_uri() . '/bootstrap/js/bootstrap.min.js', 'jquery');
+    wp_enqueue_script('jquery.bootstrap.min');
+}
+add_action( 'init', 'wpt_register_js' );
+function wpt_register_css() {
+    wp_register_style( 'bootstrap.min', get_template_directory_uri() . '/bootstrap/css/bootstrap.min.css' );
+    wp_enqueue_style( 'bootstrap.min' );
+}
+add_action( 'wp_enqueue_scripts', 'wpt_register_css' );
+
+
+
 load_theme_textdomain( 'china-theme', get_template_directory() . '/languages' );
+add_theme_support( 'title-tag' );
+
+
+$args = array(
+	'flex-width'    => true,
+	'width'         => 980,
+	'flex-height'    => true,
+	'height'        => 200,
+	'default-image' => get_template_directory_uri() . '/images/headbd.png',
+);
+
+global $wp_version;
+if ( version_compare( $wp_version, '3.4', '>=' ) ) :
+	add_theme_support( 'custom-header', $args );
+else :
+	add_custom_image_header( $wp_head_callback, $admin_head_callback );
+endif;
+
+
+/* Bootstrap*/
+function wpbootstrap_scripts_with_jquery()
+{
+	// Register the script like this for a theme:
+	wp_register_script( 'custom-script', get_template_directory_uri() . '/bootstrap/js/bootstrap.js', array( 'jquery' ) );
+	// For either a plugin or a theme, you can then enqueue the script:
+	wp_enqueue_script( 'custom-script' );
+}
+add_action( 'wp_enqueue_scripts', 'wpbootstrap_scripts_with_jquery' );
 
 
 /**
  * Set up the content width value based on the theme's design.
  *
- * @see 
+ * @see
  *
  * @since v 2.3
  */
@@ -22,7 +67,7 @@ if ( ! isset( $content_width ) ) {
 		 * replace to change 'twentyfourteen' to the name of your theme in all
 		 * template files.
 		 */
-		
+
 
 		// This theme styles the visual editor to resemble the theme style.
 		add_editor_style( array( 'css/editor-style.css', chinatheme_font_url() ) );
@@ -48,13 +93,13 @@ if ( ! isset( $content_width ) ) {
 			'search-form', 'comment-form', 'comment-list', 'gallery', 'caption'
 		) );
 
-		
+
 
 		// This theme allows users to set a custom background.
 		add_theme_support( 'custom-background', apply_filters( 'china-theme_custom_background_args', array(
 			'default-color' => 'f5f5f5',
 		) ) );
-		
+
 
 		// Add support for featured content.
 		add_theme_support( 'featured-content', array(
@@ -66,9 +111,9 @@ if ( ! isset( $content_width ) ) {
 		add_filter( 'use_default_gallery_style', '__return_false' );
 
 // end_setup
-	
-	
-	
+
+
+
 	/**
 	 * Register Lato Google font for chinatheme.
 	 *
@@ -88,14 +133,21 @@ if ( ! isset( $content_width ) ) {
 
 		return $font_url;
 	}
-	
-	if ( function_exists('register_sidebar') )
-	    register_sidebar(array(
-	        'before_widget' => '<li id="%1$s" class="widget %2$s">',
-	        'after_widget' => '</li>',
-	        'before_title' => '<h2 class="bgpng sbtitle">',
-	        'after_title' => '</h2>',
-	    ));
-	
-	
+
+
+add_action( 'widgets_init', 'theme_slug_widgets_init' );
+function theme_slug_widgets_init() {
+    register_sidebar( array(
+        'name' => __( 'Main Sidebar', 'theme-slug' ),
+        'id' => 'sidebar-1',
+        'description' => __( 'Widgets in this area will be shown on all posts and pages.', 'theme-slug' ),
+        'before_widget' => '<li id="%1$s" class="widget %2$s">',
+				'after_widget'  => '</li>',
+				'before_title'  => '<h2 class="bgpng sbtitle widgettitle">',
+				'after_title'   => '</h2>',
+    ) );
+}
+
+
+
 ?>
