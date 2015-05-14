@@ -1,17 +1,22 @@
+<?php  /*Single post page*/?>
 <?php get_header(); ?>
-	<div id="container">
-		<div id="content">
+<div style="clear:both;"></div>
+	<div id="container" class="row">
+		<div id="content" class="col-xs-12 col-md-9 col-sm-9">
 			<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
+
 			<div id="post-<?php the_ID(); ?>" <?php post_class(array('bgpng')); ?>>
-				<div class="title bgpng" >
-					<div class="date">
-
+				<div class="title bgpng row" >
+					<div class="date col-md-3 col-xs-4 col-sm-3">
 						<?php the_time( get_option( 'date_format' ) ); // the_time('j') ?> <strong><?php //the_time('M') ?></strong>
-
 					</div>
-					<h2><?php the_title(); ?></h2>
 
-					<div class="comment-count"><?php comments_number('0', '1', '%'); ?></div>
+					<div class="posttitle col-md-8 col-xs-8 col-sm-7">
+						<h2 class=""><a href="<?php the_permalink() ?>" rel="bookmark"><?php the_title(); ?></a></h2>
+					</div>
+
+					<div class="comment-count col-md-1 hidden-xs col-sm-2"><?php comments_number('0', '1', '%'); ?> </div>
+
 				</div>
 				<div class="post-inner">
 					<div class="entry">
@@ -30,17 +35,18 @@
 						<?php comments_template(); ?>
 					</div>
 				</div>
-				<div class="bottom bgpng">
-					<div class="tags-box">
 
-						<div class="tags-entry bgpng" >
-							<?php the_tags(__('Tags:', 'china-theme'), ', ', '<br />'); ?>
-						</div>
-
-
-					</div>
-				</div>
 			</div><!-- //post -->
+			<div class="bottom bgpng">
+				<div class="tags-box">
+
+					<div class="tags-entry bgpng" >
+						<?php the_tags(__('Tags:', 'china-theme'), ', ', '<br />'); ?>
+					</div>
+
+
+				</div>
+			</div>
 			<?php endwhile;?>
 				<div id="nav">
 					<ul>
@@ -53,6 +59,9 @@
 			<?php  endif; ?>
 		</div><!-- / Content -->
 
-		<?php get_sidebar(); ?>
+		<div class="col-xs-12 col-md-3 col-sm-3">
+			<?php get_sidebar(); ?>
+		</div>
+
 	</div><!-- / container -->
 <?php get_footer(); ?>

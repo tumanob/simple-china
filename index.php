@@ -5,14 +5,16 @@
 			<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 			<div  id="post-<?php the_ID(); ?>" <?php post_class(array('bgpng')); ?> >
 				<div class="title bgpng row" >
-					<div class="date col-md-2 .col-xs-6">
-
+					<div class="date col-md-3 col-xs-4 col-sm-3">
 						<?php the_time( get_option( 'date_format' ) ); // the_time('j') ?> <strong><?php //the_time('M') ?></strong>
+					</div>
 
-				</div>
-					<h2 class="col-md-8"><a href="<?php the_permalink() ?>" rel="bookmark"><?php the_title(); ?></a></h2>
+					<div class="posttitle col-md-8 col-xs-8 col-sm-7">
+						<h2 class=""><a href="<?php the_permalink() ?>" rel="bookmark"><?php the_title(); ?></a></h2>
+					</div>
 
-					<div class="comment-count col-md-2"><?php comments_number('0', '1', '%'); ?> </div>
+					<div class="comment-count col-md-1 hidden-xs col-sm-2"><?php comments_number('0', '1', '%'); ?> </div>
+
 				</div>
 				<div class="post-inner">
 					<div class="entry">
@@ -31,28 +33,40 @@
 						<?php wp_link_pages(); ?>
 					</div>
 				</div>
-				<div class="bottom bgpng">
-					<div class="tags-box">
 
-						<div class="tags-entry bgpng" >
-							<ul>
-								<li class="pull-left"><?php the_tags(__('Tags:', 'china-theme'), ', ', '<br />'); ?> </li>
-								<li class="pull-left"><?php _e('Author:', 'china-theme'); ?> <?php the_author() ?></li>
-								<li class="pull-left"><?php _e('Category:', 'china-theme'); ?> <?php the_category(', ');?></li>
-							</ul>
-						</div>
-
-
-					</div>
-				</div>
 			</div><!-- //post -->
-			<?php endwhile;?>
-				<div id="nav">
-					<ul>
-						<li><?php next_posts_link(__('&laquo; Older Entries', 'china-theme')) ?></li>
-						<li><?php previous_posts_link(__('Newer Entries &raquo;', 'china-theme')) ?></li>
-					</ul>
+			<div class="bottom bgpng">
+				<div class="tags-box">
+
+					<div class="tags-entry bgpng" >
+						<ul class="">
+							<li class=""><?php the_tags(__('Tags:', 'china-theme'), ', ', '<br />'); ?> </li>
+							<li class=""><?php _e('Author:', 'china-theme'); ?> <?php the_author() ?></li>
+							<li class=""><?php _e('Category:', 'china-theme'); ?> <?php the_category(', ');?></li>
+						</ul>
+					</div>
+
+
 				</div>
+			</div>
+			<?php endwhile;?>
+
+			<?php	if (function_exists('wp_pagenavi')) {
+
+				wp_pagenavi();
+				}
+				else { ?>
+					<div id="pagenav">
+						<ul>
+							<li class="older pull-left"><?php next_posts_link(__('&laquo; Older Entries', 'china-theme')) ?></li>
+							<li class="newer pull-right"><?php previous_posts_link(__('Newer Entries &raquo;', 'china-theme')) ?></li>
+						</ul>
+					</div>
+				<?php }
+			?>
+
+
+
 			<?php else : ?>
 				<h2>Not found</h2>
 			<?php  endif; ?>
