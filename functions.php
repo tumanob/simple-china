@@ -31,8 +31,6 @@ $args = array(
 global $wp_version;
 if ( version_compare( $wp_version, '3.4', '>=' ) ) :
 	add_theme_support( 'custom-header', $args );
-else :
-	add_custom_image_header( $wp_head_callback, $admin_head_callback );
 endif;
 
 
