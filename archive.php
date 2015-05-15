@@ -1,4 +1,20 @@
-<?php get_header(); ?>
+<?php
+/**
+ * The template for displaying archive pages
+ *
+ * Used to display archive-type pages if nothing more specific matches a query.
+ * For example, puts together date-based pages if no date.php file exists.
+ *
+ * If you'd like to further customize these archive views, you may create a
+ * new template file for each one. For example, tag.php (Tag archives),
+ * category.php (Category archives), author.php (Author archives), etc.
+ *
+ * @package WordPress
+ * @subpackage Simple China
+ * @since 3.0
+ */
+
+ get_header(); ?>
  <div style="clear:both;"></div>
  <div class="breadcrumbs" xmlns:v="http://rdf.data-vocabulary.org/#">
      <?php if(function_exists('bcn_display'))
@@ -6,6 +22,13 @@
          bcn_display();
      }?>
  </div>
+ <header class="page-header">
+				<?php
+					the_archive_title( '<h1 class="page-title">', '</h1>' );
+					the_archive_description( '<div class="taxonomy-description">', '</div>' );
+				?>
+        <h3><?php global $paged; if($paged!==0){echo "(". __('Page','china-theme').$paged.'/ '.$wp_query->max_num_pages.')';} ?></h3>
+	</header><!-- .page-header -->
 	<div id="container" class="row">
 		<div id="content" class="col-xs-12 col-md-9 col-sm-9">
 			<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
