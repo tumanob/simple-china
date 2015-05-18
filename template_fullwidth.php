@@ -1,6 +1,6 @@
 <?php
 /*
-Template Name: No Sidebar
+Template Name: 100% width content
 Description: A Page Template with a 100% width of content withour sidebar.
 */
 ?>

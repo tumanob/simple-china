@@ -215,7 +215,7 @@ img.png {
   width: 100%;
 	float: left;
 	padding: 10px 0px 80px 10px;
-  margin-top: 60px;
+/*  margin-top: 60px; */
 }
 
 /* Content
@@ -303,7 +303,7 @@ img.png {
 
 	.post .entry {
 		/* background: url(images/post-entry-b.jpg) no-repeat bottom;*/
-		max-width: 655px;
+	/*	max-width: 655px;*/
 		padding: 0 30px 20px 30px;
 		font-size: 13px;
 		line-height: 20px;
@@ -1090,3 +1090,13 @@ width:100%;
 .breadcrumbs a,.breadcrumbs a:hover {
 color: #530b01;
 }
+
+
+#frontpage-slider
+{
+margin-top:40px;
+
+}
+
+
+.home .post ul.list-group li {  margin-left: 0px; }

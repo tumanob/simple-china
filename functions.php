@@ -20,6 +20,13 @@ load_theme_textdomain( 'china-theme', get_template_directory() . '/languages' );
 add_theme_support( 'title-tag' );
 
 
+// Create Slider Post Type
+require( get_template_directory() . '/inc/slider/slider_post_type.php' );
+// Create Slider
+require( get_template_directory() . '/inc/slider/slider.php' );
+
+
+
 $args = array(
 	'flex-width'    => true,
 	'width'         => 980,
@@ -134,16 +141,50 @@ if ( ! isset( $content_width ) ) {
 
 
 add_action( 'widgets_init', 'theme_slug_widgets_init' );
+
 function theme_slug_widgets_init() {
+
     register_sidebar( array(
-        'name' => __( 'Main Sidebar', 'theme-slug' ),
+        'name' => __( 'Main Sidebar', 'china-theme' ),
         'id' => 'sidebar-1',
-        'description' => __( 'Widgets in this area will be shown on all posts and pages.', 'theme-slug' ),
+        'description' => __( 'Widgets in this area will be shown on all posts and pages.', 'china-theme' ),
         'before_widget' => '<li id="%1$s" class="widget %2$s">',
 				'after_widget'  => '</li>',
 				'before_title'  => '<h2 class="bgpng sbtitle widgettitle">',
 				'after_title'   => '</h2>',
     ) );
+
+    register_sidebar( array(
+        'name' => __( 'Front left', 'china-theme' ),
+        'id' => 'sidebar-f1',
+        'description' => __( 'Widgets in this area on fron page on the left.', 'china-theme' ),
+        'before_widget' => '<li id="%1$s" class="widget %2$s">',
+				'after_widget'  => '</li>',
+				'before_title'  => '<h2 class="bgpng sbtitle widgettitle">',
+				'after_title'   => '</h2>',
+    ) );
+
+    register_sidebar( array(
+        'name' => __( 'Front center', 'china-theme' ),
+        'id' => 'sidebar-f2',
+        'description' => __( 'Widgets in this area on fron page on the center.', 'china-theme' ),
+        'before_widget' => '<li id="%1$s" class="widget %2$s">',
+				'after_widget'  => '</li>',
+				'before_title'  => '<h2 class="bgpng sbtitle widgettitle">',
+				'after_title'   => '</h2>',
+    ) );
+
+    register_sidebar( array(
+        'name' => __( 'Front right', 'china-theme' ),
+        'id' => 'sidebar-f3',
+        'description' => __( 'Widgets in this area on fron page on the right.', 'china-theme' ),
+        'before_widget' => '<li id="%1$s" class="widget %2$s">',
+				'after_widget'  => '</li>',
+				'before_title'  => '<h2 class="bgpng sbtitle widgettitle">',
+				'after_title'   => '</h2>',
+    ) );
+
+
 }
 
 
