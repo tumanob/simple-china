@@ -93,7 +93,8 @@ msgstr "Submit Comment"
 #: ../footer.php:2
 msgid "Copyright information"
 msgstr ""
-"Designed by <a href=\"http://www.alexander-tumanov.name/\">TumanoB</a>."
+"Designed by <a href=\"http://www.alexander-tumanov.name/\">Alexander "
+"Tumanov</a>."
 
 #: ../functions.php:42
 msgid "Top primary menu"

@@ -73,7 +73,8 @@ msgstr "已不能发帖"
 #: ../footer.php:2
 msgid "Copyright information"
 msgstr ""
-"Designed by <a href=\"http://www.alexander-tumanov.name/\">TumanoB</a>."
+"Designed by <a href=\"http://www.alexander-tumanov.name/\">Alexander "
+"Tumanov</a>."
 
 #: ../functions.php:90
 msgid "Top primary menu"
