@@ -1,23 +1,27 @@
 /*
-	Theme Name: Simple China
-	Theme URI: http://www.alexander-tumanov.name/free/china-blog-wordpress-theme/
-	Description: Simple China Bootstrap theme designed by <a href="http://www.alexander-tumanov.name/">Alexander Tumanov</a>. This blog theme for blogs about China, Business with China, culture of China or any China related blogs. Supported languages: English, Russian , Chinese.
-	Version: 3.1
-    License: GNU General Public License v2 or later
-    License URI: http://www.gnu.org/licenses/gpl-2.0.html
-	Author: Alexander Tumanov
-	Author URI: http://www.alexander-tumanov.name/
-	Tags: yellow,light, blue, dark, red, two-columns, fixed-layout, theme-options, right-sidebar
+*	Theme Name: Simple China
+*	Theme URI: http://www.alexander-tumanov.name/free/china-blog-wordpress-theme/
+*	Description: Simple china is Elegant, Responsive and beautiful Theme with Easy Customization Options. The Customization Options includes using your own Custom Header image, Front Page template, Responsive slider, Full width template and onboard plugin intergrated. Languages included: English, Russian , Chinese.
+*	Version: 3.2
+* License: GNU General Public License v2 or later
+* License URI: http://www.gnu.org/licenses/gpl-2.0.html
+*	Author: Alexander Tumanov
+*	Author URI: http://www.alexander-tumanov.name/
+*	Tags: yellow, blue, grey, red, custom-menu, custom-header ,responsive-layout, full-width-template, two-columns, theme-options, right-sidebar,language-support, translation-ready,one-column, two-columns
+*	Copyright: (c) 2015 Alexander Tumanov
+*	This work, like WordPress, is released under GNU General Public License, version 2 (GPL).
+*	http://www.gnu.org/licenses/old-licenses/gpl-2.0.html
+*/
 
-	The Simple China  Theme is copyright Alexander Tumanov http://www.alexander-tumanov.name/
-	This work, like WordPress, is released under GNU General Public License, version 2 (GPL).
-	http://www.gnu.org/licenses/old-licenses/gpl-2.0.html
 
+/**
+* IMPORTANT : If you write your CSS code below, it will be deleted when you'll update the theme.
+* If you want to make quick style test / changes, consider using the Custom CSS located in css/custom.css.
 */
 
 @import url('bootstrap/css/bootstrap.min.css');
 @import url('bootstrap/css/bootstrap-theme.min.css');
-
+@import url('css/custom.css');
 
 * {
    margin:0;
