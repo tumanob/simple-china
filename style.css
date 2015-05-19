@@ -218,7 +218,7 @@ img.png {
  margin-top: 60px;
 }
 
-.home #container
+.page-template-template_front #container
 {
   margin-top: 0px;
 }
@@ -1103,7 +1103,7 @@ margin-top:40px;
 }
 
 
-.home .post ul.list-group li {  margin-left: 0px; }
+.page-template-template_front .post ul.list-group li {  margin-left: 0px; }
 
 
 .front-recent{
@@ -1131,5 +1131,5 @@ margin-top: 0px;
 
 .home-widgets
 {
-  margin: 0px !important; 
+  margin: 0px !important;
 }
