@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: china-theme\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-05-18 15:35+0600\n"
+"POT-Creation-Date: 2015-05-19 10:43+0600\n"
 "PO-Revision-Date: \n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -75,18 +75,51 @@ msgstr "Комментарии закрыты. "
 #: ../footer.php:2
 msgid "Copyright information"
 msgstr ""
-"Designed by <a href=\"http://www.alexander-tumanov.name/\">TumanoB</a>."
+"Designed by <a href=\"http://www.alexander-tumanov.name/\">Alexander "
+"Tumanov</a>."
 
 #: ../functions.php:90
 msgid "Top primary menu"
 msgstr ""
 
-#: ../functions.php:146
+#: ../functions.php:148
 msgid "Main Sidebar"
 msgstr ""
 
-#: ../functions.php:148
+#: ../functions.php:150
 msgid "Widgets in this area will be shown on all posts and pages."
+msgstr ""
+
+#: ../functions.php:158
+msgid "Front left"
+msgstr ""
+
+#: ../functions.php:160
+msgid "Widgets in this area on fron page on the left."
+msgstr ""
+
+#: ../functions.php:168
+msgid "Front center"
+msgstr ""
+
+#: ../functions.php:170
+msgid "Widgets in this area on fron page on the center."
+msgstr ""
+
+#: ../functions.php:178
+msgid "Front right"
+msgstr ""
+
+#: ../functions.php:180
+msgid "Widgets in this area on fron page on the right."
+msgstr ""
+
+#: ../functions.php:188
+msgid "Front content"
+msgstr ""
+
+#: ../functions.php:190
+msgid "Widgets in this area on fron page inside content on right ."
 msgstr ""
 
 #: ../header.php:96
@@ -105,6 +138,10 @@ msgstr "Категории"
 #: ../sidebar.php:19
 msgid "Links"
 msgstr "Ссылки"
+
+#: ../template_front.php:53
+msgid "Recent"
+msgstr "Недавние"
 
 #: ../inc/slider/slider_post_type.php:11 ../inc/slider/slider_post_type.php:12
 msgid "Add New Slide"

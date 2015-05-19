@@ -184,6 +184,16 @@ function theme_slug_widgets_init() {
 				'after_title'   => '</h2>',
     ) );
 
+    register_sidebar( array(
+        'name' => __( 'Front content', 'china-theme' ),
+        'id' => 'sidebar-fright',
+        'description' => __( 'Widgets in this area on fron page inside content on right .', 'china-theme' ),
+        'before_widget' => '<li id="%1$s" class="widget %2$s">',
+        'after_widget'  => '</li>',
+        'before_title'  => '<h2 class="bgpng sbtitle widgettitle">',
+        'after_title'   => '</h2>',
+    ) );
+
 
 }
 

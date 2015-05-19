@@ -16,21 +16,21 @@ Description: A Page Template for front page with slider and widgets.
 	<div class="home-widgets row">
     <div class="col-xs-12 col-md-4 col-sm-4">
         <?php if ( is_active_sidebar( 'sidebar-f1' ) ) : ?>
-        	<div id="primary-sidebar" class="primary-sidebar widget-area" role="complementary">
+        	<div id="primary-sidebar" class="sidebar widget-area" role="complementary">
         		<?php dynamic_sidebar( 'sidebar-f1' ); ?>
         	</div><!-- #primary-sidebar -->
         <?php endif; ?>
   </div>
     <div class="col-xs-12 col-md-4 col-sm-4">
       <?php if ( is_active_sidebar( 'sidebar-f2' ) ) : ?>
-        <div id="primary-sidebar" class="primary-sidebar widget-area" role="complementary">
+        <div id="primary-sidebar" class="sidebar widget-area" role="complementary">
           <?php dynamic_sidebar( 'sidebar-f2' ); ?>
         </div><!-- #primary-sidebar -->
       <?php endif; ?>
     </div>
     <div class="col-xs-12 col-md-4 col-sm-4">
       <?php if ( is_active_sidebar( 'sidebar-f3' ) ) : ?>
-        <div id="primary-sidebar" class="primary-sidebar widget-area" role="complementary">
+        <div id="primary-sidebar" class="sidebar widget-area" role="complementary">
           <?php dynamic_sidebar( 'sidebar-f3' ); ?>
         </div><!-- #primary-sidebar -->
       <?php endif; ?>
@@ -51,23 +51,30 @@ Description: A Page Template for front page with slider and widgets.
             <div class="row">
               <div class="col-xs-12 col-md-8 col-sm-8">
                 <h3>	<?php _e('Recent', 'china-theme'); ?> </h3>
-                <ul class="list-group">
+                <ul class="list-group front-recent">
                     <?php
                     $args = array( 'posts_per_page' => 5);
 
                     $myposts = get_posts( $args );
                     foreach ( $myposts as $post ) : setup_postdata( $post ); ?>
-                    	<li class="list-group-item row">
-                      <div class="col-xs-12 col-md-3 col-sm-3">
-                    <?php
-                        // check if the post has a Post Thumbnail assigned to it.
+                    	<li class="list-group-item">
+
+                    	<div class="">
+                        <h4><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h4>
+                        <div> <?php the_date(); ?> </div>
+                        <div>
+                          <div class="pull-left">
+                          <?php
+                          // check if the post has a Post Thumbnail assigned to it.
                             if ( has_post_thumbnail() ) {
-                            	the_post_thumbnail(array(100, 100));
+                              the_post_thumbnail(array(100, 100));
                             } ?>
+                          </div>
+                          <?php the_excerpt(); ?>
+                        </div>
                       </div>
-                    	<div class="col-xs-12 col-md-9 col-sm-9"><h4>	<a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h4>
-                      <div> <?php //the_date(); ?> </div>
-                      <div><?php the_excerpt(); ?> </div>
+
+
                     	</li>
                     <?php endforeach;
                     wp_reset_postdata();?>
@@ -76,7 +83,11 @@ Description: A Page Template for front page with slider and widgets.
 
               </div>
               <div class="col-xs-12 col-md-4 col-sm-4">
-                widget newsnewsnewsnews news news newsnews
+                <?php if ( is_active_sidebar( 'sidebar-fright' ) ) : ?>
+                  <div id="primary-sidebar" class="sidebar widget-area" role="complementary">
+                    <?php dynamic_sidebar( 'sidebar-fright' ); ?>
+                  </div><!-- #primary-sidebar -->
+                <?php endif; ?>
               </div>
 
             </div>
