@@ -6,8 +6,8 @@ error_reporting(0); // TODO FIX it later
 
     function register_slides_posttype() {
         $labels = array(
-            'name'              => _x( 'Slides', 'post type general name' ),
-            'singular_name'     => _x( 'Slide', 'post type singular name' ),
+            'name'              => __( 'Slides', 'china-theme' ),
+            'singular_name'     => __( 'Slide', 'china-theme' ),
             'add_new'           => __( 'Add New Slide', 'china-theme' ),
             'add_new_item'      => __( 'Add New Slide', 'china-theme' ),
             'edit_item'         => __( 'Edit Slide', 'china-theme' ),
