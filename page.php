@@ -41,7 +41,7 @@
 					</ul>
 				</div>
 			<?php else : ?>
-				<h2>Not found</h2>
+				<h2><?php _e('Not found', 'china-theme'); ?></h2>
 			<?php  endif; ?>
 		</div><!-- / Content -->
 

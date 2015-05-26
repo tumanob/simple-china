@@ -2,7 +2,6 @@
 /**
  * The template for displaying 404 pages (not found)
  *
- * @package WordPress
  * @subpackage Siple China
  * @since 3.0
  */

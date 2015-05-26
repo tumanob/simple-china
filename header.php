@@ -14,49 +14,25 @@
 		add_action( 'wp_head', 'theme_slug_render_title' );
 	}
 	?>
-
-	<link rel="stylesheet" href="<?php bloginfo('stylesheet_url'); ?>" type="text/css" media="screen" />
-
 	<?php  if ( is_singular() ) wp_enqueue_script( 'comment-reply' ); ?>
 
 	<?php wp_enqueue_script("jquery"); ?>
 	<?php wp_head(); ?>
-	<link rel="canonical" href="<?php echo "http://".$_SERVER['HTTP_HOST'].$_SERVER['REQUEST_URI']; ?>"/>
-
 
 </head>
 <body  <?php body_class(); ?> >
 
-
 <div id="wrapper">
-
-
-
-
-
-
-
-
 	<div id="header">
 		<div id="head">
-			<!--<img src="<?php header_image(); ?>" height="<?php echo get_custom_header()->height; ?>" width="<?php echo get_custom_header()->width; ?>" alt="" />-->
 			<div class="hederimage" style="background:url(<?php header_image(); ?>);"></div>
-
-
-			<!--<div class="bgpng" style="background:url(<?php echo get_template_directory_uri(); ?>/images/head6.png)"></div>
-			<div class="bgpng" style="background:url(<?php echo get_template_directory_uri(); ?>/images/head7.png)"></div>
-			<div id="mainmenu">
-				<?php wp_nav_menu( array( 'theme_location' => 'primary' ) ); ?>
-
-			</div>-->
-
 			<div id="topmenu">
 					<nav class="navbar navbar-default" role="navigation" style="margin-top:0px;">
 					<div class="container-fluid">
 						<!-- Brand and toggle get grouped for better mobile display -->
 						<div class="navbar-header">
 							<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-								<span class="sr-only">Toggle navigation</span>
+								<span class="sr-only"><?php _e('Toggle navigation', 'china-theme'); ?></span>
 								<span class="icon-bar"></span>
 								<span class="icon-bar"></span>
 								<span class="icon-bar"></span>
@@ -81,10 +57,6 @@
 						</div>
 				</nav>
 			</div>
-
-
-
-
 		</div>
 		<div id="logo">
 			<div id="logo-inner" class="bgpng" style="background:url(<?php echo get_template_directory_uri(); ?>/images/logo.png)">

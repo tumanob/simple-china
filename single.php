@@ -14,7 +14,7 @@
 			<div id="post-<?php the_ID(); ?>" <?php post_class(array('bgpng')); ?>>
 				<div class="title bgpng row" >
 					<div class="date col-md-3 col-xs-4 col-sm-3">
-						<?php the_time( get_option( 'date_format' ) ); // the_time('j') ?> <strong><?php //the_time('M') ?></strong>
+						<?php the_time( get_option( 'date_format' ) );  ?> 
 					</div>
 
 					<div class="posttitle col-md-8 col-xs-8 col-sm-7">
@@ -61,7 +61,7 @@
 					</ul>
 				</div>
 			<?php else : ?>
-				<h2>Not found</h2>
+				<h2><?php _e('Not found', 'china-theme'); ?></h2>
 			<?php  endif; ?>
 		</div><!-- / Content -->
 

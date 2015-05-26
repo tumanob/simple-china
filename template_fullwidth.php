@@ -4,9 +4,6 @@ Template Name: 100% width content
 Description: A Page Template with a 100% width of content withour sidebar.
 */
 ?>
-
-
-
 <?php get_header(); ?>
 <div style="clear:both;"></div>
 <div class="breadcrumbs" xmlns:v="http://rdf.data-vocabulary.org/#">

@@ -74,7 +74,7 @@
 
 
 			<?php else : ?>
-				<h2>Not found</h2>
+				<h2><?php _e('Not found', 'china-theme'); ?></h2>
 			<?php  endif; ?>
 		</div><!-- / Content -->
 		<div class="col-xs-12 col-md-3 col-sm-3">

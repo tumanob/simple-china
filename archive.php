@@ -9,7 +9,6 @@
  * new template file for each one. For example, tag.php (Tag archives),
  * category.php (Category archives), author.php (Author archives), etc.
  *
- * @package WordPress
  * @subpackage Simple China
  * @since 3.0
  */
@@ -97,7 +96,7 @@
 
 
 			<?php else : ?>
-				<h2>Not found</h2>
+				<h2><?php _e('Not found', 'china-theme'); ?></h2>
 			<?php  endif; ?>
 		</div><!-- / Content -->
 		<div class="col-xs-12 col-md-3 col-sm-3">
