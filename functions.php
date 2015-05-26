@@ -41,11 +41,6 @@ function my_theme_setup(){
 add_theme_support( 'title-tag' );
 
 
-// Create Slider Post Type
-require( get_template_directory() . '/inc/slider/slider_post_type.php' );
-// Create Slider
-require( get_template_directory() . '/inc/slider/slider.php' );
-
 
 
 $args = array(

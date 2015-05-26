@@ -10,9 +10,6 @@ Description: A Page Template for front page with slider and widgets.
 <?php get_header(); ?>
 <div style="clear:both;"></div>
 
-  <div id="frontpage-slider">
-    <?php echo schina_slider_template(); ?>
-  </div>
 	<div class="home-widgets row">
     <div class="col-xs-12 col-md-4 col-sm-4">
         <?php if ( is_active_sidebar( 'sidebar-f1' ) ) : ?>
