@@ -1,7 +1,8 @@
-= Simple China wordpress theme =
+# Simple China wordpress theme
 
+[Visit Demo website!](http://www.alexander-tumanov.name/)
 
-=== Features===
+## Features
 * custom-menu,
 * custom-header,
 * responsive-layout,
@@ -10,21 +11,20 @@
 * translation-ready  and available in Russian, English and Chinese language
 * Front page template with 4 widgets zones
 
-=== Wordpress theme directory ===
+## Wordpress theme directory
 
-https://wordpress.org/themes/simple-china/
+[Download theme and rate on wordpress theme directory!](https://wordpress.org/themes/simple-china/)
 
-=== Suports Plugins ====
+
+
+## Suports Plugins
 
 * WP-PageNavi
 * Breadcrumb NavXT
 
 
-=== Theme and design is created by Alexander Tumanov, http://www.alexander-tumanov.name/ ===
 
-
-
-=== Licenses ===
+### Licenses
 
 This theme is distributed under the terms of the GNU GPL
 http://www.gnu.org/licenses/old-licenses/gpl-2.0.html
