@@ -35,7 +35,7 @@ add_action( 'wp_enqueue_scripts', 'wpbootstrap_scripts_with_jquery' );
 
 add_action('after_setup_theme', 'my_theme_setup');
 function my_theme_setup(){
-  load_theme_textdomain( 'china-theme', get_template_directory() . '/languages' );
+  load_theme_textdomain( 'simple-china', get_template_directory() . '/languages' );
 }
 
 add_theme_support( 'title-tag' );
@@ -74,7 +74,7 @@ if ( ! isset( $content_width ) ) {
 		 *
 		 * Translations can be added to the /languages/ directory.
 		 * If you're building a theme based on Twenty Fourteen, use a find and
-		 * replace to change 'twentyfourteen' to the name of your theme in all
+		 * replace to change 'simple-china' to the name of your theme in all
 		 * template files.
 		 */
 
@@ -92,7 +92,7 @@ if ( ! isset( $content_width ) ) {
 
 		// This theme uses wp_nav_menu() in two locations.
 		register_nav_menus( array(
-			'primary'   => __( 'Top primary menu', 'china-theme' )
+			'primary'   => __( 'Top primary menu', 'simple-china' )
 		) );
 
 		/*
@@ -106,14 +106,14 @@ if ( ! isset( $content_width ) ) {
 
 
 		// This theme allows users to set a custom background.
-		add_theme_support( 'custom-background', apply_filters( 'china-theme_custom_background_args', array(
+		add_theme_support( 'custom-background', apply_filters( 'simple-china_custom_background_args', array(
 			'default-color' => 'f5f5f5',
 		) ) );
 
 
 		// Add support for featured content.
 		add_theme_support( 'featured-content', array(
-			'featured_content_filter' => 'china-theme_get_featured_posts',
+			'featured_content_filter' => 'simple-china_get_featured_posts',
 			'max_posts' => 6,
 		) );
 
@@ -137,7 +137,7 @@ if ( ! isset( $content_width ) ) {
 		 * Translators: If there are characters in your language that are not supported
 		 * by Lato, translate this to 'off'. Do not translate into your own language.
 		 */
-		if ( 'off' !== _x( 'on', 'Lato font: on or off', 'twentyfourteen' ) ) {
+		if ( 'off' !== _x( 'on', 'Lato font: on or off', 'simple-china' ) ) {
 			$font_url = add_query_arg( 'family', urlencode( 'Lato:300,400,700,900,300italic,400italic,700italic' ), "//fonts.googleapis.com/css" );
 		}
 
@@ -150,9 +150,9 @@ add_action( 'widgets_init', 'china_theme_widgets_init' );
 function china_theme_widgets_init() {
 
     register_sidebar( array(
-        'name' => __( 'Main Sidebar', 'china-theme' ),
+        'name' => __( 'Main Sidebar', 'simple-china' ),
         'id' => 'sidebar-1',
-        'description' => __( 'Widgets in this area will be shown on all posts and pages.', 'china-theme' ),
+        'description' => __( 'Widgets in this area will be shown on all posts and pages.', 'simple-china' ),
         'before_widget' => '<li id="%1$s" class="widget %2$s">',
 				'after_widget'  => '</li>',
 				'before_title'  => '<h2 class="bgpng sbtitle widgettitle">',
@@ -160,9 +160,9 @@ function china_theme_widgets_init() {
     ) );
 
     register_sidebar( array(
-        'name' => __( 'Front left', 'china-theme' ),
+        'name' => __( 'Front left', 'simple-china' ),
         'id' => 'sidebar-f1',
-        'description' => __( 'Widgets in this area on fron page on the left.', 'china-theme' ),
+        'description' => __( 'Widgets in this area on fron page on the left.', 'simple-china' ),
         'before_widget' => '<li id="%1$s" class="widget %2$s">',
 				'after_widget'  => '</li>',
 				'before_title'  => '<h2 class="bgpng sbtitle widgettitle">',
@@ -170,9 +170,9 @@ function china_theme_widgets_init() {
     ) );
 
     register_sidebar( array(
-        'name' => __( 'Front center', 'china-theme' ),
+        'name' => __( 'Front center', 'simple-china' ),
         'id' => 'sidebar-f2',
-        'description' => __( 'Widgets in this area on fron page on the center.', 'china-theme' ),
+        'description' => __( 'Widgets in this area on fron page on the center.', 'simple-china' ),
         'before_widget' => '<li id="%1$s" class="widget %2$s">',
 				'after_widget'  => '</li>',
 				'before_title'  => '<h2 class="bgpng sbtitle widgettitle">',
@@ -180,9 +180,9 @@ function china_theme_widgets_init() {
     ) );
 
     register_sidebar( array(
-        'name' => __( 'Front right', 'china-theme' ),
+        'name' => __( 'Front right', 'simple-china' ),
         'id' => 'sidebar-f3',
-        'description' => __( 'Widgets in this area on fron page on the right.', 'china-theme' ),
+        'description' => __( 'Widgets in this area on fron page on the right.', 'simple-china' ),
         'before_widget' => '<li id="%1$s" class="widget %2$s">',
 				'after_widget'  => '</li>',
 				'before_title'  => '<h2 class="bgpng sbtitle widgettitle">',
@@ -190,9 +190,9 @@ function china_theme_widgets_init() {
     ) );
 
     register_sidebar( array(
-        'name' => __( 'Front content', 'china-theme' ),
+        'name' => __( 'Front content', 'simple-china' ),
         'id' => 'sidebar-fright',
-        'description' => __( 'Widgets in this area on fron page inside content on right .', 'china-theme' ),
+        'description' => __( 'Widgets in this area on fron page inside content on right .', 'simple-china' ),
         'before_widget' => '<li id="%1$s" class="widget %2$s">',
         'after_widget'  => '</li>',
         'before_title'  => '<h2 class="bgpng sbtitle widgettitle">',

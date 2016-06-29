@@ -46,9 +46,9 @@
 
 					<div class="tags-entry bgpng" >
 						<ul class="">
-							<li class=""><?php the_tags(__('Tags:', 'china-theme'), ', ', '<br />'); ?> </li>
-							<li class=""><?php _e('Author:', 'china-theme'); ?> <?php the_author() ?></li>
-							<li class=""><?php _e('Category:', 'china-theme'); ?> <?php the_category(', ');?></li>
+							<li class=""><?php the_tags(__('Tags:', 'simple-china'), ', ', '<br />'); ?> </li>
+							<li class=""><?php _e('Author:', 'simple-china'); ?> <?php the_author() ?></li>
+							<li class=""><?php _e('Category:', 'simple-china'); ?> <?php the_category(', ');?></li>
 						</ul>
 					</div>
 
@@ -64,8 +64,8 @@
 				else { ?>
 					<div id="pagenav">
 						<ul>
-							<li class="older pull-left"><?php next_posts_link(__('&laquo; Older Entries', 'china-theme')) ?></li>
-							<li class="newer pull-right"><?php previous_posts_link(__('Newer Entries &raquo;', 'china-theme')) ?></li>
+							<li class="older pull-left"><?php next_posts_link(__('&laquo; Older Entries', 'simple-china')) ?></li>
+							<li class="newer pull-right"><?php previous_posts_link(__('Newer Entries &raquo;', 'simple-china')) ?></li>
 						</ul>
 					</div>
 				<?php }
@@ -74,7 +74,7 @@
 
 
 			<?php else : ?>
-				<h2><?php _e('Not found', 'china-theme'); ?></h2>
+				<h2><?php _e('Not found', 'simple-china'); ?></h2>
 			<?php  endif; ?>
 		</div><!-- / Content -->
 		<div class="col-xs-12 col-md-3 col-sm-3">

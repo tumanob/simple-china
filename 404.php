@@ -22,13 +22,13 @@
 
 			<div  id="post-404" class="post" >
 				<div class="title bgpng col-md-12 col-xs-12 col-sm-12" >
-          <h2><?php _e( '404 Error', 'china-theme' ); ?></h2>
-					<h2><?php _e( 'Oops! That page can&rsquo;t be found.', 'china-theme' ); ?></h2>
+          <h2><?php _e( '404 Error', 'simple-china' ); ?></h2>
+					<h2><?php _e( 'Oops! That page can&rsquo;t be found.', 'simple-china' ); ?></h2>
 				</div>
 				<div class="post-inner">
 					<div class="entry">
 
-            <p><?php _e( 'It looks like nothing was found at this location. Maybe try a search?', 'twentyfifteen' ); ?></p>
+            <p><?php _e( 'It looks like nothing was found at this location. Maybe try a search?', 'simple-china' ); ?></p>
 
   					<?php get_search_form(); ?>
 

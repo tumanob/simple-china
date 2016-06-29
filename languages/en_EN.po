@@ -1,6 +1,6 @@
 msgid ""
 msgstr ""
-"Project-Id-Version: china-theme\n"
+"Project-Id-Version: simple-china\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2014-07-11 11:33+0600\n"
 "PO-Revision-Date: \n"

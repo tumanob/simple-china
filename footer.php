@@ -1,5 +1,5 @@
 	<div id="footer">
-		<p><?php _e('Copyright information', 'china-theme'); ?> </p>
+		<p><?php _e('Copyright information', 'simple-china'); ?> </p>
 
 
 	</div>

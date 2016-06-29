@@ -32,7 +32,7 @@
 						<!-- Brand and toggle get grouped for better mobile display -->
 						<div class="navbar-header">
 							<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-								<span class="sr-only"><?php _e('Toggle navigation', 'china-theme'); ?></span>
+								<span class="sr-only"><?php _e('Toggle navigation', 'simple-china'); ?></span>
 								<span class="icon-bar"></span>
 								<span class="icon-bar"></span>
 								<span class="icon-bar"></span>
@@ -65,6 +65,6 @@
 			</div>
 			<div id="logo-r" class="bgpng" style="background:url(<?php echo get_template_directory_uri(); ?>/images/logo-r.png);">&nbsp;</div>
 		</div>
-		<a id="feed" type="application/rss+xml" title="<?php printf(__('%s RSS Feed', 'china-theme'), get_bloginfo('name')); ?>" href="<?php bloginfo('rss2_url'); ?>" /></a>
+		<a id="feed" type="application/rss+xml" title="<?php printf(__('%s RSS Feed', 'simple-china'), get_bloginfo('name')); ?>" href="<?php bloginfo('rss2_url'); ?>" /></a>
 
 	</div><!-- / Header-->

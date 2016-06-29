@@ -1,16 +1,16 @@
 /*
 *	Theme Name: Simple China
-*	Theme URI: http://www.alexander-tumanov.name/free/china-blog-wordpress-theme/
+*	Theme URI: http://www.alexander-tumanov.name/china-blog-wordpress-theme/
 *	Description: Simple china is Elegant, Responsive and beautiful Theme with Easy Customization Options. The Customization Options includes using your own Custom Header image, Front Page template, Responsive slider, Full width template and onboard plugin intergrated. Languages included: English, Russian , Chinese.
-*	Version: 3.4
+*	Version: 3.6
 * License: GNU General Public License v2 or later
 * License URI: http://www.gnu.org/licenses/gpl-2.0.html
 *	Author: Alexander Tumanov
 *	Author URI: http://www.alexander-tumanov.name/
-*	Tags: yellow, blue, red, custom-menu, custom-header ,responsive-layout, full-width-template, two-columns, theme-options, right-sidebar, translation-ready,one-column, two-columns
+*	Tags: custom-menu, custom-header , full-width-template, two-columns, theme-options, right-sidebar, translation-ready,one-column, two-columns
 *	Copyright: (c) 2015 Alexander Tumanov
 * This theme is distributed under the terms of the GNU GPL http://www.gnu.org/licenses/old-licenses/gpl-2.0.html
-* Text Domain:  china-theme
+* Text Domain: simple-china
 */
 
 
@@ -1040,7 +1040,7 @@ li .dropdown-menu>li>a:focus, li .dropdown-menu>li>a:hover
 
 .entry iframe
 {
-  width:100%;
+  /*width:100%;*/
 }
 
 blockquote{
@@ -1137,4 +1137,34 @@ margin-top: 0px;
 .home-widgets
 {
   margin: 0px !important;
+}
+
+
+/* Text meant only for screen readers. */
+.screen-reader-text {
+	clip: rect(1px, 1px, 1px, 1px);
+	position: absolute !important;
+	height: 1px;
+	width: 1px;
+	overflow: hidden;
+}
+
+.screen-reader-text:focus {
+	background-color: #f1f1f1;
+	border-radius: 3px;
+	box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.6);
+	clip: auto !important;
+	color: #21759b;
+	display: block;
+	font-size: 14px;
+	font-size: 0.875rem;
+	font-weight: bold;
+	height: auto;
+	left: 5px;
+	line-height: normal;
+	padding: 15px 23px 14px;
+	text-decoration: none;
+	top: 5px;
+	width: auto;
+	z-index: 100000; /* Above WP toolbar. */
 }

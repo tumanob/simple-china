@@ -47,7 +47,7 @@
 				<div class="tags-box">
 
 					<div class="tags-entry bgpng" >
-						<?php the_tags(__('Tags:', 'china-theme'), ', ', '<br />'); ?>
+						<?php the_tags(__('Tags:', 'simple-china'), ', ', '<br />'); ?>
 					</div>
 
 
@@ -56,12 +56,12 @@
 			<?php endwhile;?>
 				<div id="nav">
 					<ul>
-						<li><?php next_posts_link(__('&laquo; Older Entries', 'china-theme')) ?></li>
-						<li><?php previous_posts_link(__('Newer Entries &raquo;', 'china-theme')) ?></li>
+						<li><?php next_posts_link(__('&laquo; Older Entries', 'simple-china')) ?></li>
+						<li><?php previous_posts_link(__('Newer Entries &raquo;', 'simple-china')) ?></li>
 					</ul>
 				</div>
 			<?php else : ?>
-				<h2><?php _e('Not found', 'china-theme'); ?></h2>
+				<h2><?php _e('Not found', 'simple-china'); ?></h2>
 			<?php  endif; ?>
 		</div><!-- / Content -->
 

@@ -26,7 +26,7 @@
 					the_archive_title( '<h1 class="page-title">', '</h1>' );
 					the_archive_description( '<div class="taxonomy-description">', '</div>' );
 				?>
-        <h3><?php global $paged; if($paged!==0){echo "(". __('Page','china-theme').$paged.'/ '.$wp_query->max_num_pages.')';} ?></h3>
+        <h3><?php global $paged; if($paged!==0){echo "(". __('Page','simple-china').$paged.'/ '.$wp_query->max_num_pages.')';} ?></h3>
 	</header><!-- .page-header -->
 	<div id="container" class="row">
 		<div id="content" class="col-xs-12 col-md-9 col-sm-9">
@@ -68,9 +68,9 @@
 
 					<div class="tags-entry bgpng" >
 						<ul class="">
-							<li class=""><?php the_tags(__('Tags:', 'china-theme'), ', ', '<br />'); ?> </li>
-							<li class=""><?php _e('Author:', 'china-theme'); ?> <?php the_author() ?></li>
-							<li class=""><?php _e('Category:', 'china-theme'); ?> <?php the_category(', ');?></li>
+							<li class=""><?php the_tags(__('Tags:', 'simple-china'), ', ', '<br />'); ?> </li>
+							<li class=""><?php _e('Author:', 'simple-china'); ?> <?php the_author() ?></li>
+							<li class=""><?php _e('Category:', 'simple-china'); ?> <?php the_category(', ');?></li>
 						</ul>
 					</div>
 
@@ -86,8 +86,8 @@
 				else { ?>
 					<div id="pagenav">
 						<ul>
-							<li class="older pull-left"><?php next_posts_link(__('&laquo; Older Entries', 'china-theme')) ?></li>
-							<li class="newer pull-right"><?php previous_posts_link(__('Newer Entries &raquo;', 'china-theme')) ?></li>
+							<li class="older pull-left"><?php next_posts_link(__('&laquo; Older Entries', 'simple-china')) ?></li>
+							<li class="newer pull-right"><?php previous_posts_link(__('Newer Entries &raquo;', 'simple-china')) ?></li>
 						</ul>
 					</div>
 				<?php }
@@ -96,7 +96,7 @@
 
 
 			<?php else : ?>
-				<h2><?php _e('Not found', 'china-theme'); ?></h2>
+				<h2><?php _e('Not found', 'simple-china'); ?></h2>
 			<?php  endif; ?>
 		</div><!-- / Content -->
 		<div class="col-xs-12 col-md-3 col-sm-3">

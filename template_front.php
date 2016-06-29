@@ -47,7 +47,7 @@ Description: A Page Template for front page with slider and widgets.
 
             <div class="row">
               <div class="col-xs-12 col-md-8 col-sm-8">
-                <h3>	<?php _e('Recent', 'china-theme'); ?> </h3>
+                <h3>	<?php _e('Recent', 'simple-china'); ?> </h3>
                 <ul class="list-group front-recent">
                     <?php
                     $args = array( 'posts_per_page' => 5);
