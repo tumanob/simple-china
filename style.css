@@ -7,7 +7,7 @@
 * License URI: http://www.gnu.org/licenses/gpl-2.0.html
 *	Author: Alexander Tumanov
 *	Author URI: http://www.alexander-tumanov.name/
-*	Tags: custom-menu, custom-header , full-width-template, two-columns, theme-options, right-sidebar, translation-ready,one-column, two-columns
+*	Tags: custom-menu, custom-header , full-width-template, two-columns, theme-options, right-sidebar, translation-ready,one-column, two-columns, sticky-post
 *	Copyright: (c) 2015 Alexander Tumanov
 * This theme is distributed under the terms of the GNU GPL http://www.gnu.org/licenses/old-licenses/gpl-2.0.html
 * Text Domain: simple-china
@@ -130,7 +130,7 @@ img.png {
 	#header #logo {
 		position: absolute;
 		top: 18px;
-		left: 35px;
+		left: 15px;
 		height: 133px;
 	}
 
@@ -138,10 +138,15 @@ img.png {
 			float: left;
 			height: 133px;
 			min-width: 293px;
-		}
+      margin-right: 40px;
+      background: url("images/logo.png");
+    }
+
+
 
 		#header #logo-r {
-			float: right;
+      position: absolute;
+      right: 15px;
 			width: 30px;
 			height: 133px;
 		}
@@ -152,7 +157,7 @@ img.png {
 		*/
 		#header h1 {
 			text-align: center;
-			margin: 20px -33px 0 0;
+			margin: 5px -33px 0 0;
 			padding: 0 25px;
 			position: relative;
 		}
@@ -900,6 +905,9 @@ color: #767676;
 
 #logo-inner h2 {
 	margin: 0 0 0 30px;
+  max-height:56px;
+  overflow:hidden;
+
 }
 
 ul.children li a{
@@ -989,15 +997,18 @@ li .dropdown-menu>li>a:focus, li .dropdown-menu>li>a:hover
 
 .navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover
 {
-  background-color: #D9BBA1 !important;
+  background-color: rgb(210, 176, 92)  !important;
 }
 
 .navbar-default .navbar-toggle{
-  background-color: rgb(94, 56, 24) !important;
+  background-color: rgb(164, 95, 42) !important;
   margin-top: 10px;
   margin-right: 50px;
 }
 
+.navbar-default .navbar-toggle .icon-bar{
+      background-color: #fff !important;
+}
 /*
 .container-fluid>.navbar-collapse{
 
@@ -1038,9 +1049,9 @@ li .dropdown-menu>li>a:focus, li .dropdown-menu>li>a:hover
 
 }
 
-.entry iframe
+.entry iframe, .entry-content iframe, .entry-content video,.entry-content embed
 {
-  /*width:100%;*/
+  max-width:100%;
 }
 
 blockquote{

@@ -1,12 +1,16 @@
 <?php  /*Single post page*/?>
 <?php get_header(); ?>
 <div style="clear:both;"></div>
-<div class="breadcrumbs" xmlns:v="http://rdf.data-vocabulary.org/#">
-    <?php if(function_exists('bcn_display'))
-    {
+<?php if(function_exists('bcn_display'))
+{
+?>
+  <div class="breadcrumbs" xmlns:v="http://rdf.data-vocabulary.org/#">
+      <?php
         bcn_display();
-    }?>
-</div>
+      ?>
+  </div>
+<?php
+}?>
 	<div id="container" class="row">
 		<div id="content" class="col-xs-12 col-md-9 col-sm-9">
 			<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
@@ -14,7 +18,7 @@
 			<div id="post-<?php the_ID(); ?>" <?php post_class(array('bgpng')); ?>>
 				<div class="title bgpng row" >
 					<div class="date col-md-3 col-xs-4 col-sm-3">
-						<?php the_time( get_option( 'date_format' ) );  ?> 
+						<?php the_time( get_option( 'date_format' ) );  ?>
 					</div>
 
 					<div class="posttitle col-md-8 col-xs-8 col-sm-7">

@@ -15,12 +15,16 @@
 
  get_header(); ?>
  <div style="clear:both;"></div>
- <div class="breadcrumbs" xmlns:v="http://rdf.data-vocabulary.org/#">
-     <?php if(function_exists('bcn_display'))
-     {
+ <?php if(function_exists('bcn_display'))
+ {
+ ?>
+   <div class="breadcrumbs" xmlns:v="http://rdf.data-vocabulary.org/#">
+       <?php
          bcn_display();
-     }?>
- </div>
+       ?>
+   </div>
+ <?php
+ }?>
  <header class="page-header">
 				<?php
 					the_archive_title( '<h1 class="page-title">', '</h1>' );

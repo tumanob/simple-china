@@ -59,7 +59,7 @@
 			</div>
 		</div>
 		<div id="logo">
-			<div id="logo-inner" class="bgpng" style="background:url(<?php echo get_template_directory_uri(); ?>/images/logo.png)">
+			<div id="logo-inner" class="bgpng" >
 				<h1><a href="<?php echo home_url(); ?>/"><?php bloginfo('name'); ?></a></h1>
 				<h2><?php bloginfo('description'); ?></h2>
 			</div>

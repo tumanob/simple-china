@@ -6,12 +6,16 @@ Description: A Page Template with a 100% width of content withour sidebar.
 ?>
 <?php get_header(); ?>
 <div style="clear:both;"></div>
-<div class="breadcrumbs" xmlns:v="http://rdf.data-vocabulary.org/#">
-    <?php if(function_exists('bcn_display'))
-    {
+<?php if(function_exists('bcn_display'))
+{
+?>
+  <div class="breadcrumbs" xmlns:v="http://rdf.data-vocabulary.org/#">
+      <?php
         bcn_display();
-    }?>
-</div>
+      ?>
+  </div>
+<?php
+}?>
 	<div id="container" class="row">
 		<div id="content" class="col-xs-12 col-md-12 col-sm-12">
 			<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
