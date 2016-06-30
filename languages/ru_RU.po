@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: simple-china\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-05-19 10:43+0600\n"
+"POT-Creation-Date: 2016-06-30 14:15+0600\n"
 "PO-Revision-Date: \n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -10,49 +10,60 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Poedit-KeywordsList: _e;__;_l\n"
+"X-Poedit-KeywordsList: _e;__;_l;_n\n"
 "X-Poedit-Basepath: .\n"
-"X-Generator: Poedit 1.5.7\n"
+"X-Generator: Poedit 1.6.9\n"
 "X-Poedit-SourceCharset: UTF-8\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
+"%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
 "X-Poedit-SearchPath-0: ..\n"
 
-#: ../404.php:26
+#: ../404.php:31
 msgid "404 Error"
 msgstr ""
 
-#: ../404.php:27
+#: ../404.php:32
 msgid "Oops! That page can&rsquo;t be found."
 msgstr ""
 
-#: ../404.php:32
+#: ../404.php:37
 msgid "It looks like nothing was found at this location. Maybe try a search?"
 msgstr ""
 
-#: ../archive.php:30
+#: ../archive.php:33
 #, fuzzy
 msgid "Page"
 msgstr "Страницы"
 
-#: ../archive.php:72 ../index.php:49 ../single.php:50
+#: ../archive.php:75 ../index.php:53 ../single.php:54
 #, fuzzy
 msgid "Tags:"
 msgstr "пишет:"
 
-#: ../archive.php:73 ../index.php:50
+#: ../archive.php:76 ../index.php:54
 msgid "Author:"
 msgstr "Автор:"
 
-#: ../archive.php:74 ../index.php:51
+#: ../archive.php:77 ../index.php:55
 msgid "Category:"
 msgstr "Категории:"
 
-#: ../archive.php:90 ../index.php:67 ../single.php:59
+#: ../archive.php:93 ../index.php:71 ../single.php:63
 msgid "&laquo; Older Entries"
 msgstr "&laquo; старые записи"
 
-#: ../archive.php:91 ../index.php:68 ../single.php:60
+#: ../archive.php:94 ../index.php:72 ../single.php:64
 msgid "Newer Entries &raquo;"
 msgstr "Новые записи  &raquo;"
+
+#: ../archive.php:103 ../index.php:81 ../page.php:48 ../single.php:68
+msgid "Not found"
+msgstr ""
+
+#: ../comments.php:8
+#, php-format
+msgid "One thought on &ldquo;%2$s&rdquo;"
+msgstr "Один комментарий &ldquo;%2$s&rdquo;"
 
 #: ../comments.php:15 ../comments.php:33
 msgid "Comment navigation"
@@ -78,51 +89,55 @@ msgstr ""
 "Designed by <a href=\"http://www.alexander-tumanov.name/\">Alexander "
 "Tumanov</a>."
 
-#: ../functions.php:90
+#: ../functions.php:95
 msgid "Top primary menu"
 msgstr ""
 
-#: ../functions.php:148
+#: ../functions.php:153
 msgid "Main Sidebar"
 msgstr ""
 
-#: ../functions.php:150
+#: ../functions.php:155
 msgid "Widgets in this area will be shown on all posts and pages."
 msgstr ""
 
-#: ../functions.php:158
+#: ../functions.php:163
 msgid "Front left"
 msgstr ""
 
-#: ../functions.php:160
+#: ../functions.php:165
 msgid "Widgets in this area on fron page on the left."
 msgstr ""
 
-#: ../functions.php:168
+#: ../functions.php:173
 msgid "Front center"
 msgstr ""
 
-#: ../functions.php:170
+#: ../functions.php:175
 msgid "Widgets in this area on fron page on the center."
 msgstr ""
 
-#: ../functions.php:178
+#: ../functions.php:183
 msgid "Front right"
 msgstr ""
 
-#: ../functions.php:180
+#: ../functions.php:185
 msgid "Widgets in this area on fron page on the right."
 msgstr ""
 
-#: ../functions.php:188
+#: ../functions.php:193
 msgid "Front content"
 msgstr ""
 
-#: ../functions.php:190
+#: ../functions.php:195
 msgid "Widgets in this area on fron page inside content on right ."
 msgstr ""
 
-#: ../header.php:96
+#: ../header.php:35
+msgid "Toggle navigation"
+msgstr ""
+
+#: ../header.php:68
 #, php-format
 msgid "%s RSS Feed"
 msgstr "%s RSS лента"
@@ -139,46 +154,36 @@ msgstr "Категории"
 msgid "Links"
 msgstr "Ссылки"
 
-#: ../template_front.php:53
+#: ../template_front.php:50
 msgid "Recent"
 msgstr "Недавние"
 
-#: ../inc/slider/slider_post_type.php:11 ../inc/slider/slider_post_type.php:12
-msgid "Add New Slide"
-msgstr "Добавить Слайд"
+#~ msgid "Add New Slide"
+#~ msgstr "Добавить Слайд"
 
-#: ../inc/slider/slider_post_type.php:13
-msgid "Edit Slide"
-msgstr "Редактировать слайд"
+#~ msgid "Edit Slide"
+#~ msgstr "Редактировать слайд"
 
-#: ../inc/slider/slider_post_type.php:14
-msgid "New Slide"
-msgstr "Новый слайд"
+#~ msgid "New Slide"
+#~ msgstr "Новый слайд"
 
-#: ../inc/slider/slider_post_type.php:15
-msgid "View Slide"
-msgstr "Просмотреть слайды"
+#~ msgid "View Slide"
+#~ msgstr "Просмотреть слайды"
 
-#: ../inc/slider/slider_post_type.php:16
-msgid "Search Slides"
-msgstr "Искать слайды"
+#~ msgid "Search Slides"
+#~ msgstr "Искать слайды"
 
-#: ../inc/slider/slider_post_type.php:17 ../inc/slider/slider_post_type.php:18
-#: ../inc/slider/slider_post_type.php:19 ../inc/slider/slider_post_type.php:29
-msgid "Slide"
-msgstr "Слайд"
+#~ msgid "Slide"
+#~ msgstr "Слайд"
 
-#: ../inc/slider/slider_post_type.php:20
-msgid "Slides"
-msgstr "Слайды"
+#~ msgid "Slides"
+#~ msgstr "Слайды"
 
-#: ../inc/slider/slider_post_type.php:51
-msgid "Slide Link"
-msgstr "Ссылка Слайда "
+#~ msgid "Slide Link"
+#~ msgstr "Ссылка Слайда "
 
-#: ../inc/slider/slider_post_type.php:59
-msgid "Slide URL"
-msgstr "URL Слайдa"
+#~ msgid "Slide URL"
+#~ msgstr "URL Слайдa"
 
 #~ msgid ""
 #~ "This post is password protected. Enter the password to view comments."

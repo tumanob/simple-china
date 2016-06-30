@@ -518,10 +518,16 @@ img.png {
 			margin: 0;
 		}
 
-			#sidebar li ul li a {
+		/*	#sidebar li ul li a, #sidebar li span {
 				color: #000;
-				font-size: 1.1em;
+				font-size: 1.3em;
 			}
+*/
+
+#sidebar {
+    color: #000;
+    font-size: 1.3em;
+  }
 
 /* Footer
 ----------------------- */
@@ -1178,4 +1184,18 @@ margin-top: 0px;
 	top: 5px;
 	width: auto;
 	z-index: 100000; /* Above WP toolbar. */
+}
+
+
+#comment{
+  width:100%;
+}
+
+input[type=submit] {
+    padding:8px 18px;
+    background:#f1e4ce;
+    border:1px solid #a35c24;
+    cursor:pointer;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
 }

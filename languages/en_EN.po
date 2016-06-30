@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: simple-china\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-07-11 11:33+0600\n"
+"POT-Creation-Date: 2016-06-30 14:10+0600\n"
 "PO-Revision-Date: \n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -12,83 +12,68 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "X-Poedit-KeywordsList: _e;__\n"
 "X-Poedit-Basepath: .\n"
-"X-Generator: Poedit 1.5.7\n"
+"X-Generator: Poedit 1.6.9\n"
 "X-Poedit-SearchPath-0: ..\n"
 
-#: ../comments.php:6
-msgid "This post is password protected. Enter the password to view comments."
-msgstr "This post is password protected. Enter the password to view comments."
+#: ../404.php:31
+msgid "404 Error"
+msgstr ""
 
-#: ../comments.php:15
-msgid "Comments:"
-msgstr "Comments:"
+#: ../404.php:32
+msgid "Oops! That page can&rsquo;t be found."
+msgstr ""
 
-#: ../comments.php:23
-msgid "Says:"
+#: ../404.php:37
+msgid "It looks like nothing was found at this location. Maybe try a search?"
+msgstr ""
+
+#: ../archive.php:33
+#, fuzzy
+msgid "Page"
+msgstr "Pages"
+
+#: ../archive.php:75 ../index.php:53 ../single.php:54
+#, fuzzy
+msgid "Tags:"
 msgstr "Says:"
 
-#: ../comments.php:43
-msgid "Your comment is awaiting moderation."
-msgstr "Your comment is awaiting moderation."
+#: ../archive.php:76 ../index.php:54
+msgid "Author:"
+msgstr "Author:"
 
-#: ../comments.php:45
-msgid "at"
-msgstr "at"
+#: ../archive.php:77 ../index.php:55
+msgid "Category:"
+msgstr "Category:"
 
-#: ../comments.php:45
-msgid "edit"
-msgstr "edit"
+#: ../archive.php:93 ../index.php:71 ../single.php:63
+msgid "&laquo; Older Entries"
+msgstr "&laquo; Older Entries"
 
-#: ../comments.php:71
+#: ../archive.php:94 ../index.php:72 ../single.php:64
+msgid "Newer Entries &raquo;"
+msgstr "Newer Entries &raquo;"
+
+#: ../archive.php:103 ../index.php:81 ../page.php:48 ../single.php:68
+msgid "Not found"
+msgstr ""
+
+#: ../comments.php:15 ../comments.php:33
+msgid "Comment navigation"
+msgstr ""
+
+#: ../comments.php:16 ../comments.php:34
+#, fuzzy
+msgid "&larr; Older Comments"
+msgstr "&laquo; Older Entries"
+
+#: ../comments.php:17 ../comments.php:35
+#, fuzzy
+msgid "Newer Comments &rarr;"
+msgstr "Newer Entries &raquo;"
+
+#: ../comments.php:40
 msgid "Comments are closed."
 msgstr "Comments are closed."
-
-#: ../comments.php:81
-msgid "Add comments:"
-msgstr "Add comments:"
-
-#: ../comments.php:88
-#, php-format
-msgid "You must be <a href=\"%s\">logged in</a> to post a comment."
-msgstr "You must be <a href=\"%s\">logged in</a> to post a comment."
-
-#: ../comments.php:95
-#, php-format
-msgid "Logged in as <a href=\"%1$s\">%2$s</a>."
-msgstr "Logged in as <a href=\"%1$s\">%2$s</a>."
-
-#: ../comments.php:95
-msgid "Log out of this account"
-msgstr "Log out"
-
-#: ../comments.php:95
-msgid "Log out &raquo;"
-msgstr "Log out &raquo;"
-
-#: ../comments.php:100
-msgid "Name"
-msgstr "Name"
-
-#: ../comments.php:100 ../comments.php:103
-msgid "(required)"
-msgstr "(required)"
-
-#: ../comments.php:103
-msgid "Mail (will not be published)"
-msgstr "Mail (will not be published)"
-
-#: ../comments.php:106
-msgid "Website"
-msgstr "Website"
-
-#: ../comments.php:110
-#, php-format
-msgid "<strong>XHTML:</strong> You can use these tags: <code>%s</code>"
-msgstr "<strong>XHTML:</strong> You can use these tags: <code>%s</code>"
-
-#: ../comments.php:114
-msgid "Submit Comment"
-msgstr "Submit Comment"
 
 #: ../footer.php:2
 msgid "Copyright information"
@@ -96,39 +81,58 @@ msgstr ""
 "Designed by <a href=\"http://www.alexander-tumanov.name/\">Alexander "
 "Tumanov</a>."
 
-#: ../functions.php:42
+#: ../functions.php:95
 msgid "Top primary menu"
 msgstr ""
 
-#: ../functions.php:43
-msgid "Secondary menu located on bottom of the page"
+#: ../functions.php:153
+msgid "Main Sidebar"
 msgstr ""
 
-#: ../header.php:39
+#: ../functions.php:155
+msgid "Widgets in this area will be shown on all posts and pages."
+msgstr ""
+
+#: ../functions.php:163
+msgid "Front left"
+msgstr ""
+
+#: ../functions.php:165
+msgid "Widgets in this area on fron page on the left."
+msgstr ""
+
+#: ../functions.php:173
+msgid "Front center"
+msgstr ""
+
+#: ../functions.php:175
+msgid "Widgets in this area on fron page on the center."
+msgstr ""
+
+#: ../functions.php:183
+msgid "Front right"
+msgstr ""
+
+#: ../functions.php:185
+msgid "Widgets in this area on fron page on the right."
+msgstr ""
+
+#: ../functions.php:193
+msgid "Front content"
+msgstr ""
+
+#: ../functions.php:195
+msgid "Widgets in this area on fron page inside content on right ."
+msgstr ""
+
+#: ../header.php:35
+msgid "Toggle navigation"
+msgstr ""
+
+#: ../header.php:68
 #, php-format
 msgid "%s RSS Feed"
 msgstr "%s RSS Feed"
-
-#: ../index.php:21 ../single.php:21
-#, fuzzy
-msgid "Tags:"
-msgstr "Says:"
-
-#: ../index.php:22
-msgid "Author:"
-msgstr "Author:"
-
-#: ../index.php:23
-msgid "Category:"
-msgstr "Category:"
-
-#: ../index.php:34 ../single.php:31
-msgid "&laquo; Older Entries"
-msgstr "&laquo; Older Entries"
-
-#: ../index.php:35 ../single.php:32
-msgid "Newer Entries &raquo;"
-msgstr "Newer Entries &raquo;"
 
 #: ../sidebar.php:5
 msgid "Pages"
@@ -141,6 +145,63 @@ msgstr "Categories"
 #: ../sidebar.php:19
 msgid "Links"
 msgstr "Links"
+
+#: ../template_front.php:50
+msgid "Recent"
+msgstr ""
+
+#~ msgid ""
+#~ "This post is password protected. Enter the password to view comments."
+#~ msgstr ""
+#~ "This post is password protected. Enter the password to view comments."
+
+#~ msgid "Comments:"
+#~ msgstr "Comments:"
+
+#~ msgid "Says:"
+#~ msgstr "Says:"
+
+#~ msgid "Your comment is awaiting moderation."
+#~ msgstr "Your comment is awaiting moderation."
+
+#~ msgid "at"
+#~ msgstr "at"
+
+#~ msgid "edit"
+#~ msgstr "edit"
+
+#~ msgid "Add comments:"
+#~ msgstr "Add comments:"
+
+#~ msgid "You must be <a href=\"%s\">logged in</a> to post a comment."
+#~ msgstr "You must be <a href=\"%s\">logged in</a> to post a comment."
+
+#~ msgid "Logged in as <a href=\"%1$s\">%2$s</a>."
+#~ msgstr "Logged in as <a href=\"%1$s\">%2$s</a>."
+
+#~ msgid "Log out of this account"
+#~ msgstr "Log out"
+
+#~ msgid "Log out &raquo;"
+#~ msgstr "Log out &raquo;"
+
+#~ msgid "Name"
+#~ msgstr "Name"
+
+#~ msgid "(required)"
+#~ msgstr "(required)"
+
+#~ msgid "Mail (will not be published)"
+#~ msgstr "Mail (will not be published)"
+
+#~ msgid "Website"
+#~ msgstr "Website"
+
+#~ msgid "<strong>XHTML:</strong> You can use these tags: <code>%s</code>"
+#~ msgstr "<strong>XHTML:</strong> You can use these tags: <code>%s</code>"
+
+#~ msgid "Submit Comment"
+#~ msgstr "Submit Comment"
 
 #~ msgid ""
 #~ "Designed by <a href=\"http://www.alexander-tumanov.name/\">TumanoB</a>. "
